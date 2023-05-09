@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#firstnav {
+    /* height: 20px; */
+    background-color: rgb(11, 11, 64);
+    color: aliceblue;
+}
+a.nav-link:hover{
+    border-bottom:2px solid yellow;
+}
+a.btn:hover,button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#search {
+    border: 0;
+}
+
+nav {
+    width: 100%;
+}
+
+#logo {
+    top: 0;
+    position: absolute;
+    left: 40%;
+    right: 40%;
+    z-index: 1;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    filter: drop-shadow(0 0 20px rgb(17, 11, 20));
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+    #logo {
+        display: none;
+    }
+    #firstnav{
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* styles for tablet view */
+    #logo {
+        display: none;
+    }
+
+    #event-pic {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* styles for tablet view */
+    #interview {
+        background-image: none;
+    }
+}
+
+#head {
+    background-image: url('../image/slider2.jpg');
+}
+
+#p-font {
+    font-size: 10px
+}
+
+ul#list {
+    margin-left: -40px;
+
+}
+
+#list {
+    height: 550px;
+    overflow: auto;
+}
+
+#interview {
+    background-image: url('../image/bg-home.jpg');
+    /* height: 500px; */
+    color: black;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+    #interview {
+        background-image: none;
+        /* height: 500px; */
+        color: black;
+    }
+
+}
+
+
+blockquote {
+    font-size: 30px;
+    color: gray
+}
+
+#newsletter {
+    background-image: url('../image/bg-newsletter.jpg');
+}
+
+#list-action {
+    border: none;
+}
+footer{
+    background-color: black;
+}
+.list-group-item.list-group-item-action{
+    background-color: black;
+    color: white;
+}
+#hero{
+    background-image:linear-gradient(to right,rgba(16, 66, 98, 0.5),black),url("../image/IMG-20230417-WA0008.jpg");
+    margin: 0;
+        padding: 0;
+        min-height: 50vh;
+        max-height: 100vh;
+        background-position: center;
+        background-size: cover;
+        /* position: fixed; */
+        background-attachment: fixed;
+        background-color: rgba(16, 73, 128, 0.5);
+}
+#eventsection .card:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
