@@ -10,12 +10,13 @@ body {
 }
 
 #firstnav {
-    /* height: 20px; */
-    background-color: rgb(11, 11, 64);
+    height: 40px;
+    /* background-color: rgb(11, 11, 64); */
     color: aliceblue;
 }
 a{
     text-decoration: none;
+    color: black;
 }
 a.nav-link:hover{
     border-bottom:2px solid yellow;
@@ -32,13 +33,14 @@ nav {
 }
 
 #logo {
-    top: 0;
+    top: 1%;
     position: absolute;
     left: 40%;
     right: 40%;
     z-index: 1;
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
     filter: drop-shadow(0 0 20px rgb(17, 11, 20));
+    width:200px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -71,9 +73,8 @@ nav {
         background-image: none;
     }
 }
-
-#head {
-    background-image: url('../image/slider2.jpg');
+#carousel{
+    /* height: 100vh; */
 }
 
 #p-font {
@@ -86,16 +87,19 @@ ul#list {
 }
 
 #list {
-    height: 550px;
-    overflow: auto;
+    height: 395px;
+    overflow:auto;
 }
 
 #interview {
     background-image: url('../image/bg-home.jpg');
-    /* height: 500px; */
+    height: 500px;
+    background-repeat: no-repeat;
     color: black;
 }
-
+#tweet{
+    height: 400px;
+}
 @media only screen and (max-width: 768px) {
 
     /* For mobile phones: */
@@ -115,6 +119,11 @@ blockquote {
 
 #newsletter {
     background-image: url('../image/bg-newsletter.jpg');
+    height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #list-action {
@@ -141,4 +150,9 @@ footer{
 }
 #eventsection .card:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#storyinput{
+    background-color: transparent;
+    border:none;
+    color: white;
 }
