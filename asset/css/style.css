@@ -9,6 +9,21 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* For Webkit based browsers (Chrome, Safari, etc.) */
+/* The following properties can be changed as desired */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+}
+
 #firstnav {
     height: 40px;
     /* background-color: rgb(11, 11, 64); */
@@ -31,7 +46,6 @@ a.btn:hover,button:hover{
 nav {
     width: 100%;
 }
-
 #logo {
     top: 1%;
     position: absolute;
@@ -82,7 +96,7 @@ nav {
 }
 
 ul#list {
-    margin-left: -40px;
+    /* margin-left: -40px; */
 
 }
 
@@ -141,7 +155,7 @@ footer{
     margin: 0;
         padding: 0;
         min-height: 50vh;
-        max-height: 100vh;
+        max-height: 150vh;
         background-position: center;
         background-size: cover;
         /* position: fixed; */
@@ -155,4 +169,5 @@ footer{
     background-color: transparent;
     border:none;
     color: white;
+    border-bottom: 1px solid grey;
 }
