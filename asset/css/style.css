@@ -25,13 +25,13 @@ body {
 }
 
 #firstnav {
-    height: 40px;
-    /* background-color: rgb(11, 11, 64); */
-    color: aliceblue;
+    height: 43px;
+    /* background-color: gray; */
+    /* color: aliceblue; */
 }
 a{
     text-decoration: none;
-    color: black;
+    /* color: black; */
 }
 a.nav-link:hover{
     border-bottom:2px solid yellow;
@@ -39,22 +39,17 @@ a.nav-link:hover{
 a.btn:hover,button:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
-#search {
-    border: 0;
-}
-
 nav {
     width: 100%;
 }
 #logo {
-    top: 1%;
+    top: -2%;
     position: absolute;
-    left: 40%;
-    right: 40%;
+    left: 10%;
+    /* right: 40%; */
     z-index: 1;
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-    filter: drop-shadow(0 0 20px rgb(17, 11, 20));
-    width:200px;
+    /* filter: drop-shadow(0 0 20px rgb(17, 11, 20)); */
+    width:20vh;
 }
 
 @media only screen and (max-width: 768px) {
@@ -111,9 +106,6 @@ ul#list {
     background-repeat: no-repeat;
     color: black;
 }
-#tweet{
-    height: 400px;
-}
 @media only screen and (max-width: 768px) {
 
     /* For mobile phones: */
@@ -143,9 +135,6 @@ blockquote {
 #list-action {
     border: none;
 }
-footer{
-    background-color: black;
-}
 .list-group-item.list-group-item-action{
     background-color: black;
     color: white;
@@ -171,3 +160,96 @@ footer{
     color: white;
     border-bottom: 1px solid grey;
 }
+
+
+/*--------------------------------------------------
+Footer
+--------------------------------------------------*/
+  .footer-wrapper {
+    background-color: #1a265c;
+    padding-bottom: 24px;
+    width: 100%;
+    float: left;
+  }
+  .footer-wrapper .foooter-container {
+    background-color: black;
+    padding: 55px 0 0;
+    line-height: 2;
+  }
+  .footer-wrapper .foooter-container .footer-middle {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e9e9e9;
+  }
+  .footer-wrapper .foooter-container .footer-middle .contact-footer .logo-footer {
+    float: left;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .footer-wrapper .foooter-container .footer-middle .contact-footer .logo-footer img {
+    max-width: 75%;
+  }
+  .footer-wrapper .foooter-container .footer-middle .contact-footer .contact-desc {
+    clear: both;
+    margin-bottom: 10px;
+  }
+  .footer-wrapper .foooter-container .footer-middle .contact-footer .contact-phone-email {
+    clear: both;
+  }
+  .footer-wrapper .foooter-container .footer-middle .contact-footer .contact-phone-email .contact-email {
+    margin-left: 30px;
+  }
+  .footer-wrapper .foooter-container .footer-middle .links-footer h6 {
+    margin-bottom: 15px;
+  }
+  .footer-wrapper .foooter-container .footer-middle .links-footer ul li {
+    line-height: 2.6;
+  }
+  .footer-wrapper .foooter-container .footer-middle .links-footer ul li a{
+    color: white;
+  }
+  .footer-wrapper .foooter-container .footer-middle .links-footer ul li a:hover{
+    color: yellow;
+  }
+  .footer-wrapper .foooter-container .footer-middle .links-social {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  .footer-wrapper .foooter-container .footer-middle .links-social .login-dashboard a {
+    color: #fff;
+    padding: 18px 30px;
+    text-transform: uppercase;
+    display: block;
+    letter-spacing: 1px;
+  }
+  .footer-wrapper .foooter-container .footer-middle .links-social ul {
+    margin-top: 28px;
+  }
+  @media (max-width: 991px) {
+    .footer-wrapper .foooter-container .footer-middle .contact-footer {
+      margin-bottom: 30px;
+    }
+    .footer-wrapper .foooter-container .footer-middle .links-footer {
+      margin-bottom: 30px;
+    }
+  }
+  @media (max-width: 767px) {
+    .footer-wrapper .foooter-container .footer-middle .contact-footer {
+      text-align: center;
+    }
+    .footer-wrapper .foooter-container .footer-middle .contact-footer .logo-footer {
+      width: 100%;
+    }
+    .footer-wrapper .foooter-container .footer-middle .links-footer {
+      text-align: center;
+    }
+    .footer-wrapper .foooter-container .footer-middle .links-footer h6 {
+      margin-top: 20px;
+    }
+  }
+  .footer-wrapper .foooter-container .footer-bottom {
+    padding: 30px 0;
+  }
+  .footer-wrapper .foooter-container .footer-bottom p {
+    color: #9f9f9f;
+  }
+  

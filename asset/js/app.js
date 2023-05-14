@@ -18,8 +18,8 @@ const countdown = setInterval(function() {
 
   // Display the countdown
   const countdownElement = document.getElementById("countdown");
-  // countdownElement.innerHTML = days +" Days : " + hours +" Hours : " 
-  // + minutes +" Minutes : "  + seconds + " Seconds";
+  countdownElement.innerHTML = days +" Days : " + hours +" Hours : " 
+  + minutes +" Minutes : "  + seconds + " Seconds";
 
   // If the countdown is finished, clear the interval and display a message
   if (distance < 0) {
